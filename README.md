@@ -4,3 +4,4 @@ Hello
 состояние инфораструктуры, файлы terraformrc и локальная .terraform/ 
 директория
 new line
+pycharm string
