@@ -1,5 +1,23 @@
 Hello
-Благодаря gitignore будут проигнорированы файлы состояния инфраструктуры,
-фалйы логов и переменных, файлы переопределения, lock-файлы 
-состояние инфораструктуры, файлы terraformrc и локальная .terraform/ 
-директория
+В файле .gitignore указаны файлы, которые не попадут в репозиторий:
+.terraform/
+
+*.tfstate
+*.tfstate.*
+
+crash.log
+crash.*.log
+
+*.tfvars
+*.tfvars.json
+
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+.terraform.tfstate.lock.info
+
+
+.terraformrc
+terraform.rc
